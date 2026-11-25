@@ -11,7 +11,7 @@ resource "random_pet" "name" {
 
 resource "local_file" "config" {
   filename = "${path.module}/deployed.txt"
-  content  = "Infra version 1 deployed for ${random_pet.name.id}\n"
+  content  = "Infra version 2 deployed for ${random_pet.name.id}\n"
 }
 
 output "deployed_name" {
